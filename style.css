@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.navbar{
+    width: 90%;
+    margin: auto;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #12ffef;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+}
+
+.navbar ul li:hover:after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: #12ffef;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: all .35s ease-in-out;
+}
+
+.content{
+    text-align: center;
+    color: wheat;
+    font-family: Cambria, Cochin, Georgia;
+    padding: 20px;
+}
+.para{
+    padding-top: 1%;
+    margin: 2%;
+    line-height: 140%;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+button{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    padding: 0 5px;
+    margin: 1% 1%;
+    font-weight: bold;
+    background: transparent;
+    color: wheat;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 2px solid #12ffef86;
+    position: relative;
+    overflow: hidden;
+}
+
+button::after{
+    background: #12ffef;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+button:hover:after{
+    width: 100%;
+}
+.title{
+    margin-top: 100px;
+}
